@@ -9,3 +9,5 @@ const dummyData = [{
 router.get("/", (req, res) => {
   res.json(dummyData);
 });
+router.get("/:user_id", (req, res) => {
+  const user_id = req.params.user_id;
