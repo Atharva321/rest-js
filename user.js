@@ -6,3 +6,6 @@ const dummyData = [{
     "description": "User1"
   }
 ];
+router.get("/", (req, res) => {
+  res.json(dummyData);
+});
