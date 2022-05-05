@@ -15,3 +15,5 @@ router.get("/:user_id", (req, res) => {
 if (dummyData.length <= user_id) return res.json({ message: "User not found" });
   res.json(dummyData[user_id]);
 });
+
+module.exports = router;
